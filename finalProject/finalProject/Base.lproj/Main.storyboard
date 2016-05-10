@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8118" systemVersion="15A172" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wpY-XL-nkk">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8098"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="finalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
                         <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
@@ -15,11 +16,56 @@
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="688" y="375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vJ0-ot-5ln">
+            <objects>
+                <viewController id="wpY-XL-nkk" customClass="ViewController" customModule="finalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fjQ-ah-3eU"/>
+                        <viewControllerLayoutGuide type="bottom" id="TTd-Bj-5Qw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c2V-3k-ybh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Space Invaders" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7g-tL-62H">
+                                <rect key="frame" x="165" y="28" width="271" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="271" id="6ZC-gc-wez"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.90980218079471609" blue="1" alpha="0.88" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shoot --- Kill --- Repeat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5D-iR-gxv">
+                                <rect key="frame" x="165" y="90" width="271" height="21"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="22"/>
+                                <color key="textColor" red="0.63712896274544839" green="0.91030152088784289" blue="1" alpha="0.88" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.17428122961154452" green="0.0" blue="0.28566919191919193" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="l5D-iR-gxv" firstAttribute="top" secondItem="fjQ-ah-3eU" secondAttribute="bottom" constant="70" id="LRG-kC-DNT"/>
+                            <constraint firstItem="W7g-tL-62H" firstAttribute="top" secondItem="fjQ-ah-3eU" secondAttribute="bottom" constant="8" symbolic="YES" id="Lsu-WC-wIs"/>
+                            <constraint firstItem="W7g-tL-62H" firstAttribute="centerX" secondItem="c2V-3k-ybh" secondAttribute="centerX" id="SJY-Pf-5a2"/>
+                            <constraint firstItem="l5D-iR-gxv" firstAttribute="trailing" secondItem="W7g-tL-62H" secondAttribute="trailing" id="Sxd-6Q-hUC"/>
+                            <constraint firstItem="TTd-Bj-5Qw" firstAttribute="top" secondItem="l5D-iR-gxv" secondAttribute="bottom" constant="489" id="ggf-Du-7SG"/>
+                            <constraint firstItem="TTd-Bj-5Qw" firstAttribute="top" secondItem="W7g-tL-62H" secondAttribute="bottom" constant="502" id="kRn-Vu-A8X"/>
+                            <constraint firstItem="l5D-iR-gxv" firstAttribute="leading" secondItem="W7g-tL-62H" secondAttribute="leading" id="yl9-kF-YRc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N9c-aR-Tv5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="375"/>
         </scene>
     </scenes>
 </document>
