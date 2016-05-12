@@ -9,21 +9,25 @@
 import Foundation
 import UIKit
 
-class ViewController: UIViewController, FBSDKLoginButtonDelegate {
+class MenuViewController: UIViewController, FBSDKLoginButtonDelegate  {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
+    @IBAction func onPlayClicked(sender: AnyObject)
+    {
+        let navVC = self.storyboard!.instantiateViewControllerWithIdentifier("game_view") as! UINavigationController
+        self.presentViewController(navVC, animated: true, completion: nil)
     }
     
-    override func viewDidAppear(animated: Bool)
+    @IBAction func onFriendsClicked(sender: AnyObject)
     {
+        let navVC = self.storyboard!.instantiateViewControllerWithIdentifier("friend_view") as! UINavigationController
+        self.presentViewController(navVC, animated: true, completion: nil)
+    }
+    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
         if (FBSDKAccessToken.currentAccessToken() != nil)
-        {
-            onLogin()
-        }
-        else
         {
             let loginView : FBSDKLoginButton = FBSDKLoginButton()
             self.view.addSubview(loginView)
@@ -31,13 +35,11 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             loginView.readPermissions = ["public_profile", "email", "user_friends"]
             loginView.delegate = self
         }
-    }
-    
-    func onLogin()
-    {
-        let navVC = self.storyboard!.instantiateViewControllerWithIdentifier("main_view") as! UINavigationController
-        //let settingsVC = navVC.viewControllers[0] as! SettingsViewController
-        self.presentViewController(navVC, animated: true, completion: nil)
+        else
+        {
+            
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -48,8 +50,6 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     // Facebook Delegate Methods (for protocol)
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!)
     {
-        print("User Logged In")
-        onLogin()
         
         if ((error) != nil)
         {
@@ -70,8 +70,10 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         }
     }
     
-    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
+    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!)
+    {
         print("User Logged Out")
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     //get users data
@@ -95,5 +97,4 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             }
         })
     }
-    
 }

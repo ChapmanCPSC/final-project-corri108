@@ -12,6 +12,10 @@
 		D724A2A21CE18353007DB321 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D724A2A01CE18353007DB321 /* FBSDKShareKit.framework */; };
 		D724A2A51CE18440007DB321 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D724A2A41CE18440007DB321 /* Bolts.framework */; };
 		D724A2A71CE184FD007DB321 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D724A2A61CE184FD007DB321 /* ViewController.swift */; };
+		D798C1DC1CE402B100C260BF /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D798C1DB1CE402B100C260BF /* MenuViewController.swift */; };
+		D798C1DE1CE4059200C260BF /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D798C1DD1CE4059200C260BF /* FriendsViewController.swift */; };
+		D798C1E41CE40DE800C260BF /* enemyShip.png in Resources */ = {isa = PBXBuildFile; fileRef = D798C1E31CE40DE800C260BF /* enemyShip.png */; };
+		D798C1E61CE40E2700C260BF /* playerShip.png in Resources */ = {isa = PBXBuildFile; fileRef = D798C1E51CE40E2700C260BF /* playerShip.png */; };
 		D7E7B19A1CDAEA3900C5E0A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E7B1991CDAEA3900C5E0A4 /* AppDelegate.swift */; };
 		D7E7B19C1CDAEA3900C5E0A4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D7E7B19B1CDAEA3900C5E0A4 /* GameScene.sks */; };
 		D7E7B19E1CDAEA3900C5E0A4 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E7B19D1CDAEA3900C5E0A4 /* GameScene.swift */; };
@@ -23,8 +27,8 @@
 		D7E7B1B31CDAEB4F00C5E0A4 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = D7E7B1B11CDAEB4F00C5E0A4 /* ball.png */; };
 		D7E7B1B41CDAEB4F00C5E0A4 /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = D7E7B1B21CDAEB4F00C5E0A4 /* player.png */; };
 		D7E7B1B61CDAEF1100C5E0A4 /* spacebackground.png in Resources */ = {isa = PBXBuildFile; fileRef = D7E7B1B51CDAEF1100C5E0A4 /* spacebackground.png */; };
-		D7E7B1B91CDAF66F00C5E0A4 /* enemyShip.png in Resources */ = {isa = PBXBuildFile; fileRef = D7E7B1B71CDAF66F00C5E0A4 /* enemyShip.png */; };
-		D7E7B1BA1CDAF66F00C5E0A4 /* playerShip.png in Resources */ = {isa = PBXBuildFile; fileRef = D7E7B1B81CDAF66F00C5E0A4 /* playerShip.png */; };
+		D7E7B1B91CDAF66F00C5E0A4 /* enemyShipOld.png in Resources */ = {isa = PBXBuildFile; fileRef = D7E7B1B71CDAF66F00C5E0A4 /* enemyShipOld.png */; };
+		D7E7B1BA1CDAF66F00C5E0A4 /* playerShipOld.png in Resources */ = {isa = PBXBuildFile; fileRef = D7E7B1B81CDAF66F00C5E0A4 /* playerShipOld.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		D724A2A01CE18353007DB321 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = finalProject/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		D724A2A41CE18440007DB321 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = finalProject/Bolts.framework; sourceTree = "<group>"; };
 		D724A2A61CE184FD007DB321 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D798C1DB1CE402B100C260BF /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		D798C1DD1CE4059200C260BF /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		D798C1E31CE40DE800C260BF /* enemyShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = enemyShip.png; path = ../../../../../Downloads/enemyShip.png; sourceTree = "<group>"; };
+		D798C1E51CE40E2700C260BF /* playerShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = playerShip.png; path = ../../../../../Downloads/playerShip.png; sourceTree = "<group>"; };
 		D7E7B1961CDAEA3900C5E0A4 /* finalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E7B1991CDAEA3900C5E0A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7E7B19B1CDAEA3900C5E0A4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -47,8 +55,8 @@
 		D7E7B1B11CDAEB4F00C5E0A4 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
 		D7E7B1B21CDAEB4F00C5E0A4 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
 		D7E7B1B51CDAEF1100C5E0A4 /* spacebackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spacebackground.png; sourceTree = "<group>"; };
-		D7E7B1B71CDAF66F00C5E0A4 /* enemyShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemyShip.png; sourceTree = "<group>"; };
-		D7E7B1B81CDAF66F00C5E0A4 /* playerShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playerShip.png; sourceTree = "<group>"; };
+		D7E7B1B71CDAF66F00C5E0A4 /* enemyShipOld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemyShipOld.png; sourceTree = "<group>"; };
+		D7E7B1B81CDAF66F00C5E0A4 /* playerShipOld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playerShipOld.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,12 +97,14 @@
 		D7E7B1981CDAEA3900C5E0A4 /* finalProject */ = {
 			isa = PBXGroup;
 			children = (
+				D798C1E51CE40E2700C260BF /* playerShip.png */,
+				D798C1E31CE40DE800C260BF /* enemyShip.png */,
 				D7E7B1991CDAEA3900C5E0A4 /* AppDelegate.swift */,
 				D7E7B19B1CDAEA3900C5E0A4 /* GameScene.sks */,
 				D7E7B19D1CDAEA3900C5E0A4 /* GameScene.swift */,
 				D724A29C1CE18026007DB321 /* Bridging-Header.h */,
-				D7E7B1B71CDAF66F00C5E0A4 /* enemyShip.png */,
-				D7E7B1B81CDAF66F00C5E0A4 /* playerShip.png */,
+				D7E7B1B71CDAF66F00C5E0A4 /* enemyShipOld.png */,
+				D7E7B1B81CDAF66F00C5E0A4 /* playerShipOld.png */,
 				D7E7B1B51CDAEF1100C5E0A4 /* spacebackground.png */,
 				D7E7B1B11CDAEB4F00C5E0A4 /* ball.png */,
 				D7E7B1B21CDAEB4F00C5E0A4 /* player.png */,
@@ -105,6 +115,8 @@
 				D7E7B1A61CDAEA3900C5E0A4 /* LaunchScreen.storyboard */,
 				D7E7B1A91CDAEA3900C5E0A4 /* Info.plist */,
 				D724A2A61CE184FD007DB321 /* ViewController.swift */,
+				D798C1DB1CE402B100C260BF /* MenuViewController.swift */,
+				D798C1DD1CE4059200C260BF /* FriendsViewController.swift */,
 			);
 			path = finalProject;
 			sourceTree = "<group>";
@@ -169,14 +181,16 @@
 			files = (
 				D7E7B1B41CDAEB4F00C5E0A4 /* player.png in Resources */,
 				D7E7B19C1CDAEA3900C5E0A4 /* GameScene.sks in Resources */,
-				D7E7B1BA1CDAF66F00C5E0A4 /* playerShip.png in Resources */,
+				D7E7B1BA1CDAF66F00C5E0A4 /* playerShipOld.png in Resources */,
 				D7E7B1B61CDAEF1100C5E0A4 /* spacebackground.png in Resources */,
 				D7E7B1A81CDAEA3900C5E0A4 /* LaunchScreen.storyboard in Resources */,
-				D7E7B1B91CDAF66F00C5E0A4 /* enemyShip.png in Resources */,
+				D7E7B1B91CDAF66F00C5E0A4 /* enemyShipOld.png in Resources */,
+				D798C1E61CE40E2700C260BF /* playerShip.png in Resources */,
 				D7E7B1B31CDAEB4F00C5E0A4 /* ball.png in Resources */,
 				D7E7B1A51CDAEA3900C5E0A4 /* Assets.xcassets in Resources */,
 				D7E7B1A31CDAEA3900C5E0A4 /* Main.storyboard in Resources */,
 				D7E7B1B01CDAEAF900C5E0A4 /* Assets.xcassets in Resources */,
+				D798C1E41CE40DE800C260BF /* enemyShip.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,8 +202,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D724A2A71CE184FD007DB321 /* ViewController.swift in Sources */,
+				D798C1DC1CE402B100C260BF /* MenuViewController.swift in Sources */,
 				D7E7B19E1CDAEA3900C5E0A4 /* GameScene.swift in Sources */,
 				D7E7B1A01CDAEA3900C5E0A4 /* GameViewController.swift in Sources */,
+				D798C1DE1CE4059200C260BF /* FriendsViewController.swift in Sources */,
 				D7E7B19A1CDAEA3900C5E0A4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
