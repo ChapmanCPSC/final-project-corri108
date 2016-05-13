@@ -14,8 +14,13 @@
 		D724A2A71CE184FD007DB321 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D724A2A61CE184FD007DB321 /* ViewController.swift */; };
 		D798C1DC1CE402B100C260BF /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D798C1DB1CE402B100C260BF /* MenuViewController.swift */; };
 		D798C1DE1CE4059200C260BF /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D798C1DD1CE4059200C260BF /* FriendsViewController.swift */; };
-		D798C1E41CE40DE800C260BF /* enemyShip.png in Resources */ = {isa = PBXBuildFile; fileRef = D798C1E31CE40DE800C260BF /* enemyShip.png */; };
-		D798C1E61CE40E2700C260BF /* playerShip.png in Resources */ = {isa = PBXBuildFile; fileRef = D798C1E51CE40E2700C260BF /* playerShip.png */; };
+		D7A450F31CE56C2600BBAA00 /* enemyShip.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A450F11CE56C2600BBAA00 /* enemyShip.png */; };
+		D7A450F41CE56C2600BBAA00 /* playerShip.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A450F21CE56C2600BBAA00 /* playerShip.png */; };
+		D7A450F61CE57AC600BBAA00 /* bullet.wav in Resources */ = {isa = PBXBuildFile; fileRef = D7A450F51CE57AC600BBAA00 /* bullet.wav */; };
+		D7A450F91CE5831C00BBAA00 /* enemyShip2.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A450F71CE5831C00BBAA00 /* enemyShip2.png */; };
+		D7A450FA1CE5831C00BBAA00 /* enemyShip3.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A450F81CE5831C00BBAA00 /* enemyShip3.png */; };
+		D7A451001CE5840A00BBAA00 /* explode.wav in Resources */ = {isa = PBXBuildFile; fileRef = D7A450FB1CE5840A00BBAA00 /* explode.wav */; };
+		D7A451041CE5840A00BBAA00 /* shoot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D7A450FF1CE5840A00BBAA00 /* shoot.mp3 */; };
 		D7E7B19A1CDAEA3900C5E0A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E7B1991CDAEA3900C5E0A4 /* AppDelegate.swift */; };
 		D7E7B19C1CDAEA3900C5E0A4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D7E7B19B1CDAEA3900C5E0A4 /* GameScene.sks */; };
 		D7E7B19E1CDAEA3900C5E0A4 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E7B19D1CDAEA3900C5E0A4 /* GameScene.swift */; };
@@ -40,8 +45,13 @@
 		D724A2A61CE184FD007DB321 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D798C1DB1CE402B100C260BF /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		D798C1DD1CE4059200C260BF /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
-		D798C1E31CE40DE800C260BF /* enemyShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = enemyShip.png; path = ../../../../../Downloads/enemyShip.png; sourceTree = "<group>"; };
-		D798C1E51CE40E2700C260BF /* playerShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = playerShip.png; path = ../../../../../Downloads/playerShip.png; sourceTree = "<group>"; };
+		D7A450F11CE56C2600BBAA00 /* enemyShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemyShip.png; sourceTree = "<group>"; };
+		D7A450F21CE56C2600BBAA00 /* playerShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playerShip.png; sourceTree = "<group>"; };
+		D7A450F51CE57AC600BBAA00 /* bullet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bullet.wav; sourceTree = "<group>"; };
+		D7A450F71CE5831C00BBAA00 /* enemyShip2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemyShip2.png; sourceTree = "<group>"; };
+		D7A450F81CE5831C00BBAA00 /* enemyShip3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemyShip3.png; sourceTree = "<group>"; };
+		D7A450FB1CE5840A00BBAA00 /* explode.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explode.wav; sourceTree = "<group>"; };
+		D7A450FF1CE5840A00BBAA00 /* shoot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shoot.mp3; sourceTree = "<group>"; };
 		D7E7B1961CDAEA3900C5E0A4 /* finalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E7B1991CDAEA3900C5E0A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7E7B19B1CDAEA3900C5E0A4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -97,8 +107,13 @@
 		D7E7B1981CDAEA3900C5E0A4 /* finalProject */ = {
 			isa = PBXGroup;
 			children = (
-				D798C1E51CE40E2700C260BF /* playerShip.png */,
-				D798C1E31CE40DE800C260BF /* enemyShip.png */,
+				D7A450FB1CE5840A00BBAA00 /* explode.wav */,
+				D7A450FF1CE5840A00BBAA00 /* shoot.mp3 */,
+				D7A450F71CE5831C00BBAA00 /* enemyShip2.png */,
+				D7A450F81CE5831C00BBAA00 /* enemyShip3.png */,
+				D7A450F51CE57AC600BBAA00 /* bullet.wav */,
+				D7A450F11CE56C2600BBAA00 /* enemyShip.png */,
+				D7A450F21CE56C2600BBAA00 /* playerShip.png */,
 				D7E7B1991CDAEA3900C5E0A4 /* AppDelegate.swift */,
 				D7E7B19B1CDAEA3900C5E0A4 /* GameScene.sks */,
 				D7E7B19D1CDAEA3900C5E0A4 /* GameScene.swift */,
@@ -153,6 +168,7 @@
 				TargetAttributes = {
 					D7E7B1951CDAEA3900C5E0A4 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = T537RBPGXP;
 					};
 				};
 			};
@@ -181,16 +197,21 @@
 			files = (
 				D7E7B1B41CDAEB4F00C5E0A4 /* player.png in Resources */,
 				D7E7B19C1CDAEA3900C5E0A4 /* GameScene.sks in Resources */,
+				D7A450F41CE56C2600BBAA00 /* playerShip.png in Resources */,
+				D7A450FA1CE5831C00BBAA00 /* enemyShip3.png in Resources */,
 				D7E7B1BA1CDAF66F00C5E0A4 /* playerShipOld.png in Resources */,
 				D7E7B1B61CDAEF1100C5E0A4 /* spacebackground.png in Resources */,
+				D7A450F61CE57AC600BBAA00 /* bullet.wav in Resources */,
 				D7E7B1A81CDAEA3900C5E0A4 /* LaunchScreen.storyboard in Resources */,
 				D7E7B1B91CDAF66F00C5E0A4 /* enemyShipOld.png in Resources */,
-				D798C1E61CE40E2700C260BF /* playerShip.png in Resources */,
 				D7E7B1B31CDAEB4F00C5E0A4 /* ball.png in Resources */,
+				D7A451001CE5840A00BBAA00 /* explode.wav in Resources */,
+				D7A450F91CE5831C00BBAA00 /* enemyShip2.png in Resources */,
+				D7A451041CE5840A00BBAA00 /* shoot.mp3 in Resources */,
 				D7E7B1A51CDAEA3900C5E0A4 /* Assets.xcassets in Resources */,
 				D7E7B1A31CDAEA3900C5E0A4 /* Main.storyboard in Resources */,
+				D7A450F31CE56C2600BBAA00 /* enemyShip.png in Resources */,
 				D7E7B1B01CDAEAF900C5E0A4 /* Assets.xcassets in Resources */,
-				D798C1E41CE40DE800C260BF /* enemyShip.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +340,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/finalProject",
@@ -327,6 +350,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brickbreak.finalProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "finalProject/Bridging-Header.h";
 			};
 			name = Debug;
@@ -335,6 +359,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/finalProject",
@@ -343,6 +369,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brickbreak.finalProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "finalProject/Bridging-Header.h";
 			};
 			name = Release;

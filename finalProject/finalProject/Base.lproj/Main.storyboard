@@ -151,11 +151,24 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="EXIT GAME"/>
+                                <connections>
+                                    <action selector="onExitClicked:" destination="W3P-4I-Gbz" eventType="touchUpInside" id="M9b-xS-mb5"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Score: 52,100,000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CA-Vy-Mjc">
-                                <rect key="frame" x="178" y="170" width="244" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recent Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGU-Td-SGN">
+                                <rect key="frame" x="178" y="210" width="244" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="244" id="IRL-V1-U9C"/>
+                                    <constraint firstAttribute="width" constant="244" id="If4-yv-XNU"/>
+                                    <constraint firstAttribute="height" constant="31" id="wkB-Ln-kp0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CA-Vy-Mjc">
+                                <rect key="frame" x="156" y="171" width="288" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="IRL-V1-U9C"/>
                                     <constraint firstAttribute="height" constant="31" id="nVY-Px-ZOt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -174,19 +187,25 @@
                             <constraint firstItem="6Rb-b4-yG0" firstAttribute="centerX" secondItem="BZ4-2Z-aTj" secondAttribute="centerX" id="Igw-TF-beW"/>
                             <constraint firstItem="Tz3-xT-OxX" firstAttribute="top" secondItem="Pne-UX-MGP" secondAttribute="bottom" constant="29" id="NMM-hD-Kcr"/>
                             <constraint firstItem="Pne-UX-MGP" firstAttribute="top" secondItem="Fqf-Oq-tK4" secondAttribute="bottom" constant="24" id="R0I-ix-dOK"/>
-                            <constraint firstItem="5CA-Vy-Mjc" firstAttribute="top" secondItem="O3X-hb-jKz" secondAttribute="bottom" constant="25" id="WMh-wk-gYX"/>
+                            <constraint firstItem="5CA-Vy-Mjc" firstAttribute="top" secondItem="O3X-hb-jKz" secondAttribute="bottom" constant="26" id="WMh-wk-gYX"/>
                             <constraint firstItem="Pne-UX-MGP" firstAttribute="trailing" secondItem="Fqf-Oq-tK4" secondAttribute="trailing" id="aHp-Vk-7eK"/>
+                            <constraint firstItem="cGU-Td-SGN" firstAttribute="leading" secondItem="5CA-Vy-Mjc" secondAttribute="leading" constant="22" id="aRK-2S-7f4"/>
                             <constraint firstItem="O3X-hb-jKz" firstAttribute="trailing" secondItem="6Rb-b4-yG0" secondAttribute="trailing" id="cuI-8w-xWy"/>
                             <constraint firstItem="Tz3-xT-OxX" firstAttribute="trailing" secondItem="Fqf-Oq-tK4" secondAttribute="trailing" id="dUJ-bc-zdC"/>
                             <constraint firstItem="TuV-9D-Jwi" firstAttribute="top" secondItem="6Rb-b4-yG0" secondAttribute="bottom" constant="466" id="fCM-mK-bCJ"/>
+                            <constraint firstItem="cGU-Td-SGN" firstAttribute="top" secondItem="5CA-Vy-Mjc" secondAttribute="bottom" constant="8" symbolic="YES" id="hVF-0p-zp9"/>
                             <constraint firstItem="Tz3-xT-OxX" firstAttribute="centerX" secondItem="O3X-hb-jKz" secondAttribute="centerX" id="nvt-fh-S8q"/>
                             <constraint firstItem="Tz3-xT-OxX" firstAttribute="leading" secondItem="Fqf-Oq-tK4" secondAttribute="leading" id="oDH-Ou-oGQ"/>
-                            <constraint firstItem="Fqf-Oq-tK4" firstAttribute="top" secondItem="5CA-Vy-Mjc" secondAttribute="bottom" constant="91" id="q1n-hm-pwA"/>
+                            <constraint firstItem="Fqf-Oq-tK4" firstAttribute="top" secondItem="5CA-Vy-Mjc" secondAttribute="bottom" constant="90" id="q1n-hm-pwA"/>
                             <constraint firstItem="TuV-9D-Jwi" firstAttribute="top" secondItem="O3X-hb-jKz" secondAttribute="bottom" constant="455" id="uhX-7H-rVa"/>
                             <constraint firstItem="Tz3-xT-OxX" firstAttribute="centerX" secondItem="5CA-Vy-Mjc" secondAttribute="centerX" id="vPZ-Ll-p4e"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ipi-fo-9qA"/>
+                    <connections>
+                        <outlet property="recentScoreLabel" destination="cGU-Td-SGN" id="9Re-OX-Efb"/>
+                        <outlet property="scoreLabel" destination="5CA-Vy-Mjc" id="sBg-jp-e8g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Doz-IT-I7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

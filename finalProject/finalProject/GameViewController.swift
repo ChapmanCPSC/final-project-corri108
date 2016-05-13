@@ -15,14 +15,20 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         let scene = GameScene(size: view.bounds.size)
         let skView = view as! SKView
-        skView.showsFPS = true
-        skView.showsNodeCount = true
+        //skView.showsFPS = true
+        //skView.showsNodeCount = true
         skView.ignoresSiblingOrder = true
         scene.scaleMode = .ResizeFill
         skView.presentScene(scene)
+        scene.viewController = self
     }
     
     override func prefersStatusBarHidden() -> Bool {
         return true
+    }
+    
+    func gameOver()
+    {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

@@ -11,12 +11,18 @@ import UIKit
 
 class MenuViewController: UIViewController, FBSDKLoginButtonDelegate  {
     
+    @IBOutlet weak var recentScoreLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
     @IBAction func onPlayClicked(sender: AnyObject)
     {
         let navVC = self.storyboard!.instantiateViewControllerWithIdentifier("game_view") as! UINavigationController
         self.presentViewController(navVC, animated: true, completion: nil)
     }
     
+    @IBAction func onExitClicked(sender: AnyObject)
+    {
+        exit(0)
+    }
     @IBAction func onFriendsClicked(sender: AnyObject)
     {
         let navVC = self.storyboard!.instantiateViewControllerWithIdentifier("friend_view") as! UINavigationController
@@ -38,8 +44,42 @@ class MenuViewController: UIViewController, FBSDKLoginButtonDelegate  {
         else
         {
             
+        
         }
         
+        updateScore()
+    }
+    
+    func updateScore()
+    {
+        let def = NSUserDefaults()
+        var score = def.valueForKey("score") as? Int
+        var HIscore = def.valueForKey("hiscore") as? Int
+        
+        if(score == nil || HIscore == nil)
+        {
+            //score stuff
+            def.setInteger(0, forKey: "score")
+            def.setInteger(0, forKey: "hiscore")
+            
+            score = 0
+            HIscore = 0
+            scoreLabel.text = "High Score: 0"
+            recentScoreLabel.text = "Recent Score: 0"
+        }
+        else
+        {
+            let ascore = def.valueForKey("score") as! Int
+            let aHIscore = def.valueForKey("hiscore") as! Int
+            
+            scoreLabel.text = "High Score: \(aHIscore)"
+            recentScoreLabel.text = "Recent Score: \(ascore)"
+        }
+    }
+    
+    override func viewDidAppear(animated: Bool)
+    {
+         updateScore()
     }
     
     override func didReceiveMemoryWarning() {
