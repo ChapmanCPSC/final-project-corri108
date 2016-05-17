@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
 class MenuViewController: UIViewController, FBSDKLoginButtonDelegate  {
     
@@ -47,6 +48,7 @@ class MenuViewController: UIViewController, FBSDKLoginButtonDelegate  {
         
         }
         
+        playBGMusic()
         updateScore()
     }
     
@@ -136,5 +138,27 @@ class MenuViewController: UIViewController, FBSDKLoginButtonDelegate  {
                 print("User Email is: \(userEmail)")
             }
         })
+    }
+    
+    //plays background music
+    var player: AVAudioPlayer?
+    
+    func playBGMusic()
+    {
+        let url = NSBundle.mainBundle().URLForResource("bgmusic", withExtension: "mp3")!
+        
+        do
+        {
+            player = try AVAudioPlayer(contentsOfURL: url)
+            guard let player = player else { return }
+            
+            player.numberOfLoops = -1
+            player.prepareToPlay()
+            player.play()
+        }
+        catch let error as NSError
+        {
+            print(error.description)
+        }
     }
 }

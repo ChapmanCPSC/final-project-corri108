@@ -12,6 +12,7 @@
 		D724A2A21CE18353007DB321 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D724A2A01CE18353007DB321 /* FBSDKShareKit.framework */; };
 		D724A2A51CE18440007DB321 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D724A2A41CE18440007DB321 /* Bolts.framework */; };
 		D724A2A71CE184FD007DB321 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D724A2A61CE184FD007DB321 /* ViewController.swift */; };
+		D77704F61CEAFA0E008E32E1 /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D77704F51CEAFA0E008E32E1 /* bgmusic.mp3 */; };
 		D798C1DC1CE402B100C260BF /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D798C1DB1CE402B100C260BF /* MenuViewController.swift */; };
 		D798C1DE1CE4059200C260BF /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D798C1DD1CE4059200C260BF /* FriendsViewController.swift */; };
 		D7A450F31CE56C2600BBAA00 /* enemyShip.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A450F11CE56C2600BBAA00 /* enemyShip.png */; };
@@ -43,6 +44,7 @@
 		D724A2A01CE18353007DB321 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = finalProject/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		D724A2A41CE18440007DB321 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = finalProject/Bolts.framework; sourceTree = "<group>"; };
 		D724A2A61CE184FD007DB321 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D77704F51CEAFA0E008E32E1 /* bgmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgmusic.mp3; sourceTree = "<group>"; };
 		D798C1DB1CE402B100C260BF /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		D798C1DD1CE4059200C260BF /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		D7A450F11CE56C2600BBAA00 /* enemyShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemyShip.png; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				D7E7B1AF1CDAEAF900C5E0A4 /* Assets.xcassets */,
 				D7E7B19F1CDAEA3900C5E0A4 /* GameViewController.swift */,
 				D7E7B1A11CDAEA3900C5E0A4 /* Main.storyboard */,
+				D77704F51CEAFA0E008E32E1 /* bgmusic.mp3 */,
 				D7E7B1A41CDAEA3900C5E0A4 /* Assets.xcassets */,
 				D7E7B1A61CDAEA3900C5E0A4 /* LaunchScreen.storyboard */,
 				D7E7B1A91CDAEA3900C5E0A4 /* Info.plist */,
@@ -197,6 +200,7 @@
 			files = (
 				D7E7B1B41CDAEB4F00C5E0A4 /* player.png in Resources */,
 				D7E7B19C1CDAEA3900C5E0A4 /* GameScene.sks in Resources */,
+				D77704F61CEAFA0E008E32E1 /* bgmusic.mp3 in Resources */,
 				D7A450F41CE56C2600BBAA00 /* playerShip.png in Resources */,
 				D7A450FA1CE5831C00BBAA00 /* enemyShip3.png in Resources */,
 				D7E7B1BA1CDAF66F00C5E0A4 /* playerShipOld.png in Resources */,

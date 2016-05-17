@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -175,13 +176,22 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Special thanks to some free assets from www.OpenGameArt.org" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7f-4d-bEG">
+                                <rect key="frame" x="10" y="524" width="580" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.1742812296" green="0.0" blue="0.28566919190000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="O3X-hb-jKz" firstAttribute="leading" secondItem="6Rb-b4-yG0" secondAttribute="leading" id="1qk-hW-U1z"/>
+                            <constraint firstItem="s7f-4d-bEG" firstAttribute="top" secondItem="Tz3-xT-OxX" secondAttribute="bottom" constant="8" symbolic="YES" id="6Id-zS-QL5"/>
+                            <constraint firstItem="TuV-9D-Jwi" firstAttribute="top" secondItem="s7f-4d-bEG" secondAttribute="bottom" constant="15" id="7ay-d8-liK"/>
                             <constraint firstItem="TuV-9D-Jwi" firstAttribute="top" secondItem="Tz3-xT-OxX" secondAttribute="bottom" constant="84" id="AKk-j1-hIy"/>
                             <constraint firstItem="6Rb-b4-yG0" firstAttribute="top" secondItem="aaM-eL-ZR7" secondAttribute="bottom" id="AYc-7q-0V2"/>
                             <constraint firstItem="Tz3-xT-OxX" firstAttribute="top" secondItem="Fqf-Oq-tK4" secondAttribute="bottom" constant="110" id="C5R-qj-QF5"/>
+                            <constraint firstItem="s7f-4d-bEG" firstAttribute="leading" secondItem="BZ4-2Z-aTj" secondAttribute="leadingMargin" constant="-10" id="CLn-hK-Kwb"/>
                             <constraint firstItem="Pne-UX-MGP" firstAttribute="leading" secondItem="Fqf-Oq-tK4" secondAttribute="leading" id="Dnv-8O-Don"/>
                             <constraint firstItem="O3X-hb-jKz" firstAttribute="top" secondItem="aaM-eL-ZR7" secondAttribute="bottom" constant="60" id="Idx-ve-Jp7"/>
                             <constraint firstItem="6Rb-b4-yG0" firstAttribute="centerX" secondItem="BZ4-2Z-aTj" secondAttribute="centerX" id="Igw-TF-beW"/>
@@ -193,6 +203,7 @@
                             <constraint firstItem="O3X-hb-jKz" firstAttribute="trailing" secondItem="6Rb-b4-yG0" secondAttribute="trailing" id="cuI-8w-xWy"/>
                             <constraint firstItem="Tz3-xT-OxX" firstAttribute="trailing" secondItem="Fqf-Oq-tK4" secondAttribute="trailing" id="dUJ-bc-zdC"/>
                             <constraint firstItem="TuV-9D-Jwi" firstAttribute="top" secondItem="6Rb-b4-yG0" secondAttribute="bottom" constant="466" id="fCM-mK-bCJ"/>
+                            <constraint firstItem="s7f-4d-bEG" firstAttribute="centerX" secondItem="Tz3-xT-OxX" secondAttribute="centerX" id="gs4-So-avG"/>
                             <constraint firstItem="cGU-Td-SGN" firstAttribute="top" secondItem="5CA-Vy-Mjc" secondAttribute="bottom" constant="8" symbolic="YES" id="hVF-0p-zp9"/>
                             <constraint firstItem="Tz3-xT-OxX" firstAttribute="centerX" secondItem="O3X-hb-jKz" secondAttribute="centerX" id="nvt-fh-S8q"/>
                             <constraint firstItem="Tz3-xT-OxX" firstAttribute="leading" secondItem="Fqf-Oq-tK4" secondAttribute="leading" id="oDH-Ou-oGQ"/>
