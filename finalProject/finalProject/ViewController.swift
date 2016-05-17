@@ -14,6 +14,8 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print("jbjbj")
+        NSLog("dgdfg", "")
         
     }
     
@@ -29,6 +31,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             self.view.addSubview(loginView)
             loginView.center = self.view.center
             loginView.readPermissions = ["public_profile", "email", "user_friends"]
+            loginView.publishPermissions = ["publish_actions"]
             loginView.delegate = self
         }
     }
